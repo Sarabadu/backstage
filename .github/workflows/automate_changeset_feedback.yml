@@ -18,7 +18,6 @@ permissions:
 jobs:
   feedback:
     # prevent running towards forks and version packages
-    if: github.repository == 'backstage/backstage' && github.event.pull_request.user.login != 'backstage-service'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -36,6 +35,7 @@ jobs:
         run: |
           rm -f generate.js
           wget -O generate.js https://raw.githubusercontent.com/backstage/backstage/master/scripts/generate-changeset-feedback.js 1>&2
+          echo "new"
           node generate.js FETCH_HEAD > feedback.txt
 
       - name: Post Feedback
