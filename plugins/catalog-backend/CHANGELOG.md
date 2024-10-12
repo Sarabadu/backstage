@@ -1,5 +1,27 @@
 # @backstage/plugin-catalog-backend
 
+## 1.26.2-next.3
+
+### Patch Changes
+
+- 83a8830: Added migration `20241003170511_alter_target_in_locations.js` to change the target column in the `locations` table to TEXT type.
+  Added a hash for the key column in the `refresh_keys` table.
+- Updated dependencies
+  - @backstage/backend-openapi-utils@0.2.0-next.1
+  - @backstage/backend-plugin-api@1.0.1-next.1
+  - @backstage/catalog-client@1.7.1-next.0
+  - @backstage/catalog-model@1.7.0
+  - @backstage/config@1.2.0
+  - @backstage/errors@1.2.4
+  - @backstage/integration@1.15.1-next.1
+  - @backstage/types@1.1.1
+  - @backstage/plugin-catalog-common@1.1.0
+  - @backstage/plugin-catalog-node@1.13.1-next.1
+  - @backstage/plugin-events-node@0.4.1-next.1
+  - @backstage/plugin-permission-common@0.8.1
+  - @backstage/plugin-permission-node@0.8.4-next.1
+  - @backstage/plugin-search-backend-module-catalog@0.2.3-next.3
+
 ## 1.26.2-next.2
 
 ### Patch Changes

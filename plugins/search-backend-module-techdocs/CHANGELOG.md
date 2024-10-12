@@ -1,5 +1,25 @@
 # @backstage/plugin-search-backend-module-techdocs
 
+## 0.3.0-next.3
+
+### Minor Changes
+
+- 07a7fc2: Refactor TechDocs collator, enable clients to override the mkdocs search index transformer, so that per document properties (like tags) can be added to Backstage search index.
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/plugin-search-backend-node@1.3.3-next.3
+  - @backstage/backend-plugin-api@1.0.1-next.1
+  - @backstage/catalog-client@1.7.1-next.0
+  - @backstage/catalog-model@1.7.0
+  - @backstage/config@1.2.0
+  - @backstage/plugin-catalog-common@1.1.0
+  - @backstage/plugin-catalog-node@1.13.1-next.1
+  - @backstage/plugin-permission-common@0.8.1
+  - @backstage/plugin-search-common@1.2.14
+  - @backstage/plugin-techdocs-node@1.12.12-next.2
+
 ## 0.2.3-next.2
 
 ### Patch Changes

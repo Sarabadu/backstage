@@ -1,5 +1,37 @@
 # @backstage/backend-defaults
 
+## 0.5.1-next.3
+
+### Patch Changes
+
+- 321a994: Sensitive internal fields on `BackstageCredentials` objects are now defined as read-only properties in order to minimize risk of leakage.
+- d7b44f0: Fix for backend shutdown hanging during local development due to SQLite connection shutdown never resolving.
+- 8fd7deb: The default root HTTP service implementation will now pretty-print JSON responses in development.
+
+  If you are overriding the `rootHttpRouterServiceFactory` with a `configure` function that doesn't call `applyDefaults`, you can introduce this functionality by adding the following snippet inside `configure`:
+
+  ```ts
+  if (process.env.NODE_ENV === 'development') {
+    app.set('json spaces', 2);
+  }
+  ```
+
+- Updated dependencies
+  - @backstage/backend-app-api@1.0.1-next.1
+  - @backstage/backend-dev-utils@0.1.5
+  - @backstage/backend-plugin-api@1.0.1-next.1
+  - @backstage/cli-common@0.1.14
+  - @backstage/cli-node@0.2.9-next.0
+  - @backstage/config@1.2.0
+  - @backstage/config-loader@1.9.1
+  - @backstage/errors@1.2.4
+  - @backstage/integration@1.15.1-next.1
+  - @backstage/integration-aws-node@0.1.12
+  - @backstage/types@1.1.1
+  - @backstage/plugin-auth-node@0.5.3-next.1
+  - @backstage/plugin-events-node@0.4.1-next.1
+  - @backstage/plugin-permission-node@0.8.4-next.1
+
 ## 0.5.1-next.2
 
 ### Patch Changes

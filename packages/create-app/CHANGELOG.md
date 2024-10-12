@@ -1,5 +1,13 @@
 # @backstage/create-app
 
+## 0.5.21-next.3
+
+### Patch Changes
+
+- ab89e45: Remove some dependencies that aren't required anymore
+- Updated dependencies
+  - @backstage/cli-common@0.1.14
+
 ## 0.5.21-next.2
 
 ### Patch Changes

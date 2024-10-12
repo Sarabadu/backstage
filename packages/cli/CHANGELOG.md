@@ -1,5 +1,25 @@
 # @backstage/cli
 
+## 0.28.0-next.3
+
+### Patch Changes
+
+- 54c8aa3: The check for `react-dom/client` will now properly always run from the target directory.
+- b676cc9: feat: experimentally support using rspack instead under `EXPERIMENTAL_RSPACK` env flag
+- 4bfc2ce: Updated the Vite implementation behind the `EXPERIMENTAL_VITE` flag to work with more recent versions of Backstage.
+- 88407c3: Running `repo lint` with the `--successCache` flag now respects `.gitinore`, and it ignores projects without a `lint` script.
+- Updated dependencies
+  - @backstage/catalog-model@1.7.0
+  - @backstage/cli-common@0.1.14
+  - @backstage/cli-node@0.2.9-next.0
+  - @backstage/config@1.2.0
+  - @backstage/config-loader@1.9.1
+  - @backstage/errors@1.2.4
+  - @backstage/eslint-plugin@0.1.10-next.1
+  - @backstage/integration@1.15.1-next.1
+  - @backstage/release-manifests@0.0.11
+  - @backstage/types@1.1.1
+
 ## 0.28.0-next.2
 
 ### Patch Changes

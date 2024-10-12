@@ -1,5 +1,18 @@
 # @backstage/repo-tools
 
+## 0.10.0-next.3
+
+### Patch Changes
+
+- 248793e: Updated dependency `@useoptic/optic` to `^1.0.0`.
+- Updated dependencies
+  - @backstage/backend-plugin-api@1.0.1-next.1
+  - @backstage/catalog-model@1.7.0
+  - @backstage/cli-common@0.1.14
+  - @backstage/cli-node@0.2.9-next.0
+  - @backstage/config-loader@1.9.1
+  - @backstage/errors@1.2.4
+
 ## 0.10.0-next.2
 
 ### Patch Changes

@@ -1,5 +1,28 @@
 # @backstage/frontend-test-utils
 
+## 0.2.1-next.3
+
+### Patch Changes
+
+- 9cc7dd6: Added a `mockApis` export, which will replace the `MockX` API implementation classes and their related types. This is analogous with the backend's `mockServices`.
+
+  **DEPRECATED** several old helpers:
+
+  - Deprecated `MockAnalyticsApi`, please use `mockApis.analytics` instead.
+  - Deprecated `MockConfigApi`, please use `mockApis.config` instead.
+  - Deprecated `MockPermissionApi`, please use `mockApis.permission` instead.
+  - Deprecated `MockStorageApi`, please use `mockApis.storage` instead.
+  - Deprecated `MockTranslationApi`, please use `mockApis.translation` instead.
+
+- Updated dependencies
+  - @backstage/test-utils@1.7.0-next.3
+  - @backstage/config@1.2.0
+  - @backstage/frontend-app-api@0.10.0-next.2
+  - @backstage/frontend-plugin-api@0.9.0-next.2
+  - @backstage/types@1.1.1
+  - @backstage/version-bridge@1.0.10-next.0
+  - @backstage/plugin-app@0.1.1-next.2
+
 ## 0.2.1-next.2
 
 ### Patch Changes
